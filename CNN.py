@@ -55,3 +55,7 @@ model.fit(train_images,train_labels)
 
 test_data = tf.reshape(test_images[0],shape=[-1,28,28,1])
 model.predict(test_data)
+plt.figure()
+plt.imshow(test_images[1])##this is color
+plt.subplot(1,2)
+plt.show()
