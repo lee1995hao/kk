@@ -1,6 +1,6 @@
 import numpy as np
 def lin(x):
-    return(x)
+    return np.sin(x)
 
 
 def mc(n):
@@ -13,4 +13,4 @@ def mc(n):
     k = np.array(k)
     return k/n
 
-mc(1000000)
+mc(100)
