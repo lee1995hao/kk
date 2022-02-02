@@ -1,13 +1,6 @@
 import numpy as np
 import pandas as pd
 
-kospi200 = np.load('./kospi200/data/kospi200.npy')
-samsung = np.load('./kospi200/data/samsung.npy')
-
-print(kospi200)
-print(samsung)
-print(kospi200.shape)
-print(samsung.shape)
 ###make data to  the 5step to predict the value at 6 step
 def split_xy5(dataset, time_steps, y_column):
     x, y = list(), list()
