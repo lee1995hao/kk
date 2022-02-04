@@ -48,3 +48,4 @@ def okm(lam,model_normal_kmean,all_kmean_x):
     old_loss = new_loss
     if diff <= 0.0000000001:
         change = False
+    return group1_center,group0_center
