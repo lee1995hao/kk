@@ -33,14 +33,9 @@ smallr.old < - y - y.predict  ##the first smallr
 
 ##thresholding function
 
-scad < -function(x)
-{
-if (abs(x) <= 1.5 *lambda)
-{
-return (0)}
-if (1.5 *lambda < abs(x) & & abs(x) <= 3.5 *lambda ){return (x-1.5 * lambda * sign(x))}
-if (3.5 * lambda < abs(x) & & abs(x) < 8 * lambda ){return (x-1.5 * lambda * sign(x) * (8 * lambda -abs(x)) / (8 * lambda -3.5 * lambda ))}
-if (abs(x) >= 8 * lambda ){return (x)}}
+scad < -function(x){ 
+    ifelse(abs(x)<=lambda,return(0),return(x-sign(x)*lambda))}
+  
 
 ###function which use for loop
 lambda.choose < - function( lambda, method){
