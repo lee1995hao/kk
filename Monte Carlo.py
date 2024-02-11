@@ -13,4 +13,4 @@ def mc(n):
     k = np.array(k)
     return k/n
 
-mc(100)
+mc(10000)
